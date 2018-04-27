@@ -1,0 +1,8 @@
+Errata of produced PCB
+
+SCHEMATIC
+* C3: Capacitor should be removed
+* U1A: pin 2 and 3 should be switched
+
+PCB
+* D4 & D7: designators should be switched

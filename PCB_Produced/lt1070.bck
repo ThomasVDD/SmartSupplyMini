@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LT1070
+D 700 mA Low Dropout Voltage Regulator, Adjustable 3.75V-30V, TO220
+K 700mA LDO Regulator Adjustable Positive
+F http://cds.linear.com/docs/en/datasheet/112935ff.pdf
+$ENDCMP
+#
+#End Doc Library

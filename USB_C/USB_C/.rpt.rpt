@@ -1,0 +1,74 @@
+** Drc report for C:\Users\Thoma\Google Drive\5 Projecten\SmartSupply Mini\USB_C\USB_C\USB_C.kicad_pcb **
+** Created on  **
+
+** Found 4 DRC errors **
+ErrType(19): Pad near pad
+    @ (146.600 mm,105.850 mm): Pad B11 on F.Cu, B.Cu, Internal, Non-copper of U1
+    @ (147.400 mm,105.850 mm): Pad B10 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(19): Pad near pad
+    @ (147.400 mm,105.850 mm): Pad B10 on F.Cu, B.Cu, Internal, Non-copper of U1
+    @ (148.200 mm,105.850 mm): Pad B8 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(19): Pad near pad
+    @ (147.800 mm,105.150 mm): Pad B9 on F.Cu, B.Cu, Internal, Non-copper of U1
+    @ (148.200 mm,105.850 mm): Pad B8 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(19): Pad near pad
+    @ (151.400 mm,105.850 mm): Pad B2 on F.Cu, B.Cu, Internal, Non-copper of U1
+    @ (151.800 mm,105.150 mm): Pad B1 on F.Cu, B.Cu, Internal, Non-copper of U1
+
+** Found 18 unconnected pads **
+ErrType(2): Unconnected pads
+    @ (144.870 mm,105.750 mm): Pad 0 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-Pad0)
+    @ (144.510 mm,111.700 mm): Pad 0 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (153.490 mm,111.700 mm): Pad 0 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-Pad0)
+    @ (153.130 mm,105.750 mm): Pad 0 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (153.130 mm,105.750 mm): Pad 0 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-Pad0)
+    @ (144.870 mm,105.750 mm): Pad 0 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (150.200 mm,105.150 mm): Pad B4 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB2)
+    @ (150.600 mm,105.850 mm): Pad B3 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (148.600 mm,105.150 mm): Pad B7 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB2)
+    @ (149.400 mm,105.150 mm): Pad B6 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (148.200 mm,105.850 mm): Pad B8 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB2)
+    @ (148.600 mm,105.150 mm): Pad B7 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (150.600 mm,105.850 mm): Pad B3 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB2)
+    @ (151.400 mm,105.850 mm): Pad B2 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (149.800 mm,105.850 mm): Pad B5 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB2)
+    @ (150.600 mm,105.850 mm): Pad B3 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (149.400 mm,105.150 mm): Pad B6 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB2)
+    @ (150.200 mm,105.150 mm): Pad B4 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (146.200 mm,105.150 mm): Pad B12 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB1)
+    @ (151.800 mm,105.150 mm): Pad B1 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (146.600 mm,105.850 mm): Pad B11 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB1)
+    @ (146.200 mm,105.150 mm): Pad B12 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (147.400 mm,105.850 mm): Pad B10 on F.Cu, B.Cu, Internal, Non-copper of U1 net Net-(U1-PadB10)
+    @ (147.800 mm,105.150 mm): Pad B9 on F.Cu, B.Cu, Internal, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (146.750 mm,103.140 mm): Pad A2 on F.Cu, Non-copper of U1 net Net-(U1-PadA1)
+    @ (146.250 mm,103.140 mm): Pad A1 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (147.750 mm,103.140 mm): Pad A4 on F.Cu, Non-copper of U1 net Net-(U1-PadA3)
+    @ (147.250 mm,103.140 mm): Pad A3 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (148.750 mm,103.140 mm): Pad A6 on F.Cu, Non-copper of U1 net Net-(U1-PadA5)
+    @ (148.250 mm,103.140 mm): Pad A5 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (149.750 mm,103.140 mm): Pad A8 on F.Cu, Non-copper of U1 net Net-(U1-PadA7)
+    @ (149.250 mm,103.140 mm): Pad A7 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (150.250 mm,103.140 mm): Pad A9 on F.Cu, Non-copper of U1 net Net-(U1-PadA10)
+    @ (150.750 mm,103.140 mm): Pad A10 on F.Cu, Non-copper of U1
+ErrType(2): Unconnected pads
+    @ (151.250 mm,103.140 mm): Pad A11 on F.Cu, Non-copper of U1 net Net-(U1-PadA11)
+    @ (151.750 mm,103.140 mm): Pad A12 on F.Cu, Non-copper of U1
+
+** End of Report **
