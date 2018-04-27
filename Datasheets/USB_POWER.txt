@@ -1,6 +1,0 @@
-1) zet PSU op en stel in wa ge wilt
-2) zet uitgang aan
-3) regel de uitgangsstroom zodat ingangsstroom start van 500mA en dan in stapkes van 100mA totdat:
-a) uw gewenste current limit bereikt is
-b) VBUS onder 4.5V zakt
-4) interrupt triggert als VBUS onder 4.5V zakt
