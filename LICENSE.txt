@@ -1,6 +1,6 @@
 The schematic of this project is an adaptation my the SmartSupply (github.com/ThomasVDD/SmartSupply)
 It is licensed under CC BY SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/) 
-This version, SmartSupply Mini by Thomas Van den Dries (github.com/ThomasVDD/SmartSupply-Mini) is licensed under CC BY SA 3.0. 
+This version, SmartSupply Mini by Thomas Van den Dries (github.com/ThomasVDD/SmartSupplyMini) is licensed under CC BY SA 3.0. 
 
 Creative Commons Legal Code
 
