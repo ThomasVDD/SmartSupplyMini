@@ -194,7 +194,9 @@ void HardwareInterface::measureCurrent() {
 		readIndexA = 0;
 	}
 	averageA = totalA / numReadingsA;
-	realAverageA = averageA * VOLTAGE_REFERENCE * VOLTAGE_DIVIDER_CURRENT / MAX_REGISTER_VALUE;  ;
+	realAverageA = averageA * VOLTAGE_REFERENCE * VOLTAGE_DIVIDER_CURRENT / MAX_REGISTER_VALUE;
+  realAverageA = realAverageA * 1000; // A to mA
+ 
 
 	// Measure the current with the INA219
 	if (realAverageA < 300) {                      // current < 320 mA can be measured with INA219
@@ -214,7 +216,7 @@ void HardwareInterface::measureCurrent() {
 			currentRange = 320;
 			ina219.setCalibration_320();
 		}
-		currentReading = ina219.getCurrent_mA() - CALIBRATION_CURRENT;
+		currentReading = 2*ina219.getCurrent_mA() - CALIBRATION_CURRENT; // Library for 1 Ohm resistor instead of 0.5 Ohm
 		if (currentReading < 0) currentReading = 0;
 	} 
 	else {
@@ -248,8 +250,9 @@ void HardwareInterface::checkUSB(){
   // measure pins
   float CC1 = analogRead(CC1_PIN) * VOLTAGE_REFERENCE / MAX_REGISTER_VALUE;
   float CC2 = analogRead(CC2_PIN) * VOLTAGE_REFERENCE / MAX_REGISTER_VALUE;
-  float Dplus = analogRead(DPLUS_PIN) * VOLTAGE_REFERENCE / MAX_REGISTER_VALUE;
-  float Dminus = analogRead(DMIN_PIN) * VOLTAGE_REFERENCE / MAX_REGISTER_VALUE;
+  float Dplus = analogRead(DPLUS_PIN) * VOLTAGE_DIVIDER_USB * VOLTAGE_REFERENCE / MAX_REGISTER_VALUE;
+  float Dminus = analogRead(DMIN_PIN) * VOLTAGE_DIVIDER_USB * VOLTAGE_REFERENCE / MAX_REGISTER_VALUE;
+  
   //check proprietary chargers
   if (checkVoltage(Dplus, 2) && checkVoltage(Dminus, 2)){  
   	// low power: 500 mA
@@ -263,6 +266,10 @@ void HardwareInterface::checkUSB(){
   	// high power: 2100 mA
   	maxPower = 8;
   }
+  else if (checkVoltage(Dplus, 2.7) && checkVoltage(Dminus, 2.7)){ 
+    // high power: 2100 mA
+    maxPower = 8;
+  }
   else{
     maxPower = 5;
   }
@@ -274,7 +281,7 @@ void HardwareInterface::checkUSB(){
   Serial.println(maxPower);
 }
 
-bool HardwareInterface::checkVoltage(int pin, int value){
+bool HardwareInterface::checkVoltage(float pin, float value){
 	return (pin < (value + 0.2) && pin > (value - 0.2));
 }
 

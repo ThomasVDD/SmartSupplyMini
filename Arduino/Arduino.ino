@@ -26,8 +26,10 @@ float presetVoltages[4] = {3.3, 5, 12, 20};
 float presetCurrents[4] = {500, 500, 1000, 500};
 
 void setup() {
+  Serial.begin(9600);
+  Serial.println("SmartSupply Mini");
 	//attachInterrupt(digitalPinToInterrupt(ISR_PIN), USB_ISR, RISING);
-  	hardwareInterface.setup();
+  hardwareInterface.setup();
 	mobile.setup();
 	pc.setup();  
 }

@@ -26,6 +26,7 @@
 #define VOLTAGE_DIVIDER_CURRENT 0.4
 #define VOLTAGE_TO_CURRENT 0.2 //5V = 1A ==> *0.2
 #define VOLTAGE_DIVIDER_SUPPLY 5
+#define VOLTAGE_DIVIDER_USB 3
 
 #define MAX_REGISTER_VALUE 1023
 
@@ -75,7 +76,7 @@ private:
 
 	void setBoostConverter(float);
 	void checkUSB();
-	bool checkVoltage(int, int);
+	bool checkVoltage(float, float);
 	void lightLED();
 
 	/* averages for voltage and current */
